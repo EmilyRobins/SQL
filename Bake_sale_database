@@ -1,0 +1,27 @@
+/* Create a bake sale database. Include cookie type, price, quantity, and rating. */
+
+CREATE TABLE cookies (id INTEGER PRIMARY KEY, name TEXT, price NUMERIC, quantity INTEGER, rating INTEGER );
+
+INSERT INTO cookies VALUES (1, "Springerle", 2.00, 30, 4);
+INSERT INTO cookies VALUES (2, "Lebkuchen", 1.00, 40, 5);
+INSERT INTO cookies VALUES (3, "Pfeffernusse", 1.00, 35, 3);
+INSERT INTO cookies VALUES (4, "Choc_chip", 2.00, 30, 4);
+INSERT INTO cookies VALUES (5, "Ginger_snap", 1.50, 40, 5);
+INSERT INTO cookies VALUES (6, "Molasses", 1.50, 15, 3);
+INSERT INTO cookies VALUES (7, "Tricolor", 2.00, 30, 4);
+INSERT INTO cookies VALUES (8, "Sprinkle", 1.00, 50, 5);
+INSERT INTO cookies VALUES (9, "Danish_butter", 1.00, 35, 3);
+INSERT INTO cookies VALUES (10, "Sugar", 1.00, 50, 5);
+INSERT INTO cookies VALUES (11, "Peanut_butter", 1.00, 35, 3);
+INSERT INTO cookies VALUES (12, "Gumdrop", 1.00, 50, 5);
+INSERT INTO cookies VALUES (13, "Oatmeal", 1.00, 35, 3);
+INSERT INTO cookies VALUES (14, "Chocolate", 1.00, 50, 5);
+INSERT INTO cookies VALUES (15, "Peppermint", 1.00, 35, 3);
+
+
+
+SELECT * FROM cookies ORDER BY price;
+SELECT SUM(quantity) FROM cookies;
+SELECT SUM(price*quantity) FROM cookies;
+
+
